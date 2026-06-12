@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SmartPath — XPath Generator</title>
+    <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+    <div class="container">
+        <div id="selection-view">
+            <div class="header">
+                <h1 class="logo">SmartPath</h1>
+                <p class="tagline">Click the cursor to pick an element</p>
+            </div>
+            <button id="selectElementBtn" class="select-btn" title="Select an element on the page">
+                <img src="icons/select.svg" alt="Select" class="select-icon" />
+            </button>
+            <p class="credit">Made with ❤️ by Kumar Priyank</p>
+        </div>
+
+        <div id="instructions" class="hidden">
+            <div class="instruction-card">
+                <p id="instruction-text"></p>
+            </div>
+        </div>
+
+        <div id="errorContainer" class="hidden">
+            <div class="error-card">
+                <p id="error-text"></p>
+            </div>
+        </div>
+
+        <div id="resultsContainer" class="hidden">
+            <div class="results-header">
+                <h1 class="logo logo-sm">SmartPath</h1>
+                <span id="resultCount" class="result-count"></span>
+            </div>
+            <div id="xpathList" class="xpath-list">
+                <!-- Cards dynamically inserted here -->
+            </div>
+        </div>
+    </div>
+    <script src="popup.js"></script>
+</body>
+</html>
